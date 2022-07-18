@@ -1,0 +1,44 @@
+@import "/styles/variables.scss";
+
+.decoration {
+	width: 100%;
+	height: 100%;
+	background-image: url("/assets/img/light.svg");
+	background-size: 5em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.body {
+		width: calc(100% - 0.75em);
+		height: calc(100% - 0.75em);
+		background-color: $dark;
+	}
+}
+.content {
+	height: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	.imgContainer {
+		position: relative;
+		height: 100%;
+		width: 90%;
+		display: flex;
+		align-items: flex-end;
+	}
+	.buttonContainer {
+		margin-top: 3em;
+		position: relative;
+		height: 100%;
+		width: 85%;
+		.buttonBackgroundImg {
+			display: block;
+			position: relative;
+			margin: auto;
+			width: 50%;
+			height: 100%;
+		}
+	}
+}
