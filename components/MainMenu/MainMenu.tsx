@@ -41,7 +41,7 @@ const MainMenu = () => {
 								</Link>
 							</div>
 							<div className={style.navItemMarketplace}>
-								<Link passHref href="#" prefetch={false}>
+								<Link passHref href="/marketplace" prefetch={false}>
 									<a className={style.buttonDecoration}>
 										<div className={style.buttonBody}></div>
 										<div className={style.buttonText}>
