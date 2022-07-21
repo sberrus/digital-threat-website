@@ -1,0 +1,72 @@
+@import "/styles/variables.scss";
+.mainMenu {
+	border-bottom: 1px solid $success;
+	height: 8em;
+	.brandTextContainer {
+		@extend .centerElements;
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+	nav {
+		@extend .centerElements;
+		height: 100%;
+		width: 100%;
+		padding: 5px;
+		.navItem {
+			@extend .centerElements;
+			height: 100%;
+			width: 20%;
+			text-align: center;
+			.navLink {
+				@extend .centerElements;
+				height: 80%;
+				width: 100%;
+				text-decoration: none;
+				color: $success;
+				&:hover {
+					background-color: $success;
+					opacity: 0.8;
+					color: $dark;
+				}
+			}
+		}
+		.navItemMarketplace {
+			@extend .navItem;
+			$transitionConfig: all 0.35s;
+
+			height: 80%;
+			border: 1px solid $success;
+			transition: $transitionConfig;
+			.buttonDecoration {
+				@extend .centerElements;
+				position: relative;
+				height: 100%;
+				width: 100%;
+				background-image: url("/assets/img/diag_squares.svg");
+				background-size: 5em;
+			}
+			.buttonBody {
+				@extend .centerElements;
+				position: relative;
+				transition: $transitionConfig;
+				height: 100%;
+				width: 100%;
+				background-color: $dark;
+			}
+			.buttonText {
+				@extend .centerElements;
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				color: $success;
+			}
+			&:hover .buttonBody {
+				height: calc(100% - 1.05em);
+			}
+			&:hover {
+				box-shadow: 3px 3px 0px $success;
+			}
+		}
+	}
+}

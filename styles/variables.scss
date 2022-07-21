@@ -1,8 +1,14 @@
 $primary: #145bea;
 $secondary: #833bec;
-$success: #1ce1ac;
+$success: #00ff17;
 $info: #ff7d50;
 $warning: #ffbe0b;
 $danger: #ff007f;
 $light: #c0ccda;
 $dark: #1d1d1d;
+
+.centerElements {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

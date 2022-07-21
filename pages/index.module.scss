@@ -21,6 +21,7 @@
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+	// Brand Img
 	.imgContainer {
 		position: relative;
 		height: 100%;
@@ -28,8 +29,9 @@
 		display: flex;
 		align-items: flex-end;
 	}
+	// Continue Button
 	.buttonContainer {
-		margin-top: 3em;
+		margin-top: 5em;
 		position: relative;
 		height: 100%;
 		width: 85%;
@@ -38,7 +40,10 @@
 			position: relative;
 			margin: auto;
 			width: 50%;
-			height: 100%;
+			opacity: 0.85;
+			&:hover {
+				opacity: 1;
+			}
 		}
 	}
 }
