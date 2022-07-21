@@ -2,8 +2,9 @@
 import Link from "next/link";
 import { Container } from "react-bootstrap";
 import MainMenu from "../../components/MainMenu/MainMenu";
-import HighLightCollections from "../../modules/Marketplace/HighLightCollections/HighLightCollections";
+// modules
 import SearchForm from "../../modules/Marketplace/SearchForm/SearchForm";
+import HighLightCollections from "../../modules/Marketplace/HighLightCollections/HighLightCollections";
 // styles
 import style from "./Marketplace.module.scss";
 const index = () => {
@@ -28,9 +29,10 @@ const index = () => {
 							</Link>
 						</div>
 					</div>
-					{/* Right side highlight collections*/}
+					{/* highlight collections module */}
 					<HighLightCollections />
 				</Container>
+				{/* search form module */}
 				<SearchForm />
 			</section>
 			<section className={style.collectionListSection}>

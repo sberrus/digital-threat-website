@@ -1,8 +1,29 @@
 @import "/styles/variables.scss";
 .highlightCollections {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border: 1px solid $warning;
-	width: 40%;
+	color: $success;
+	border: 1px solid $success;
+	width: 25%;
+	padding: 0 0.5em;
+	.collectionsContainer {
+		width: 100%;
+		display: flex;
+		.assetContainer {
+			position: relative;
+			background-color: $dark;
+			min-width: 9em;
+			min-height: 9em;
+			border: 1px solid $success;
+			margin-right: 1em;
+			&::after {
+				content: "";
+				position: absolute;
+				top: 7px;
+				left: 7px;
+				width: 100%;
+				height: 100%;
+				border: 1px solid $success;
+				z-index: -1;
+			}
+		}
+	}
 }
